@@ -2,11 +2,38 @@
 What is this repository?
 ########################
 
-This is a fork of CodeIgniter 3, with the goal of keeping it up to date with **PHP 8.4** and beyond. There is no intention to add new features or change the way CI3 works. This is purely a maintenance fork.
+This is a fork of CodeIgniter 3, with the goal of keeping it up to date with modern PHP versions. There is no intention to add new features or change the way CI3 works. This is purely a maintenance fork.
+
+**PHP Compatibility:**
+
+- ✅ PHP 5.4 - 8.1 (as per original CI3 support)
+- ✅ PHP 8.2
+- ✅ PHP 8.3
+- ✅ PHP 8.4
+- ✅ PHP 8.5 (and beyond as they are released)
 
 The original CodeIgniter 3.x branch is no longer maintained, and has not been updated to work with PHP 8.2, or any newer version. This fork is intended to fill that gap.
 
 If the original CodeIgniter 3.x branch is updated to work with PHP 8.2+, and starts to be maintained again, this fork might be retired.
+
+********************
+Maintenance Policy
+********************
+
+This fork commits to:
+
+- Maintaining compatibility with each new PHP version while still supporting PHP 5.4+
+- Applying critical security fixes
+- Keeping changes minimal to preserve CI3 behavior
+- Reverting unnecessary breaking changes in CodeIgniter 3.2.0-dev
+- Running the full CI3 test suite on PHP 8.2+
+
+This fork does NOT:
+
+- Add new features
+- Change existing CI3 behavior
+- Provide commercial support
+- Make migration to CI4 any harder (or easier)
 
 ****************
 Issues and Pulls
