@@ -526,6 +526,14 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 	 */
 	public function join($table, $cond, $type = '', $escape = NULL)
 	{
+		if ($type === null) {
+			$type = '';
+		}
+
+		if (!is_string($type)) {
+			throw new InvalidArgumentException('join() expects parameter 3 to be a string, ' . gettype($type) . ' given');
+		}
+
 		$type = trim(strtoupper($type).' JOIN');
 		preg_match('#^(NATURAL\s+)?((LEFT|RIGHT|FULL)\s+)?((INNER|OUTER)\s+)?JOIN$#', $type) OR $type = 'JOIN';
 
